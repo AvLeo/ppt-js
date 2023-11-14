@@ -34,7 +34,16 @@ let pointsEnemy = 3; // Puntos de vida de la PC
 // Las funciones ScissorsSelected, rockSelected y paperSelected se llaman cuando el jugador selecciona un ataque.
 // Estas tendran que asignarle el valor correspondiente a la funcion. ejemplo: Player selecciona tijera.
 // entonces en la funcion scissorsSelected. tendra que asigar el valor 'tijera' a la variable *ataquePlayer* y juego llamar a la funcion ataquePC();
+function scissorsSelected(){
+    
+}
+function rockSelected(){
+    
+}
 
+function paperSelected(){
+    
+}
 
 
 // ataquePC se encarga de asignarle un ataque random a la PC. debajo de la variable randomAttack tendras que asignar el valor correspondiente a la variable *ataquePCRandom*
@@ -47,16 +56,7 @@ let pointsEnemy = 3; // Puntos de vida de la PC
 function ataquePC() {
     let randomAttack = random(1,3) // NO MODIFICAR
 // Tu código:
-    if (randomAttack === 1){
-        ataquePCRandom = 'piedra'
-    } 
-    if (randomAttack === 2){
-        ataquePCRandom = 'papel'
-    } 
-    if (randomAttack === 3){
-        ataquePCRandom = 'tijera'
-    }
-    combat();
+    
 }
 
 // En esta funcion se realiza la lógica del juego. Es decir: 
@@ -66,18 +66,7 @@ function ataquePC() {
 // spanVidasEnemy o spanVidasPlayer => vida actualizada del jugador
 function combat(){
 // Tu código:
-    if(ataquePCRandom === ataquePlayer){
-        msjResult('Empate')
-    }else if((ataquePlayer === 'papel' && ataquePCRandom === 'piedra') ||(ataquePlayer === 'piedra' && ataquePCRandom === 'tijera' )||( ataquePlayer === 'tijera' && ataquePCRandom === 'papel' )){
-        msjResult('Ganaste')
-        pointsEnemy--
-        spanVidasEnemy.innerHTML = pointsEnemy;
-    }else{
-        msjResult('Perdiste')
-        pointsPlayer--
-        spanVidasPlayer.innerHTML = pointsPlayer
-    }
-    revisarvida();
+    
 }
 
 // En esta funcion tendras que hacer la lógica de las vidas de los jugadores. Es decir: 
@@ -86,15 +75,7 @@ function combat(){
 
 function revisarvida(){
 // Tu código:
-if(pointsPlayer === 0) alert('Perdiste la partida :(')
-if(pointsEnemy === 0) alert('Ganaste la partido :D')
-// if(pointsEnemy === 0 || pointsPlayer === 0){
-//     // aca bloqueo los botones
-//     btnPaper.disabled = true;
-//     btnScissors.disabled = true;
-//     btnRock.disabled = true;
-//     sectionReinicio.classList.remove('show')
-// }
+
 }
 
   ///////////////////////////////////////////////////////////////////////////////////
