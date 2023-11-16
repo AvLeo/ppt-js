@@ -1,5 +1,3 @@
-import { scissorsSelected, rockSelected, paperSelected } from "./selectedFn.js";
-
 // querySelects
 
 const btnScissors = document.querySelector('#btnSelectTijera');
